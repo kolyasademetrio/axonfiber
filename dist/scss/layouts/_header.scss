@@ -1,0 +1,180 @@
+.header {
+  flex-shrink: 0;
+  flex-grow: 0;
+
+  .headerTop {
+    padding: 30px 0;
+
+    @media screen and (max-width: $tablet-media) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    &__logoWrap {
+      max-width: 166px;
+
+      @media screen and (max-width: $tablet-media) {
+        max-width: 135px;
+      }
+    }
+
+    &__logoLink {
+      display: block;
+    }
+
+    &__logoImg {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &__menuWrap {
+      display: flex;
+      align-items: flex-start;
+
+      @media screen and (max-width: $tablet-media) {
+        display: none;
+
+        &.m-active {
+          display: block;
+          position: fixed;
+          z-index: 11;
+          background-color: #343434;
+          right: 0;
+          top: 20px;
+          padding: 80px 40px 60px;
+        }
+      }
+    }
+
+    &__menuCloseBtn {
+      display: none;
+      background: transparent;
+      border: none;
+      outline: none;
+      line-height: 1;
+      padding: 0;
+      color: #fff;
+      font-weight: 400;
+
+      @media screen and (max-width: $tablet-media) {
+        display: block;
+        position: absolute;
+        top: 26px;
+        right: 23px;
+      }
+    }
+
+    &__nav {
+    }
+
+    &__menuList {
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+
+      @media screen and (max-width: $tablet-media) {
+        flex-direction: column;
+      }
+    }
+
+    &__menuItem {
+      position: relative;
+      padding: 6px 12px;
+
+      &.active {
+        background-color: $tertiary;
+
+        @media screen and (max-width: $tablet-media) {
+          background: transparent;
+        }
+
+        a {
+          color: #000;
+
+          @media screen and (max-width: $tablet-media) {
+            color: #fff;
+            border-bottom: 2px solid $tertiary;
+          }
+        }
+      }
+
+      @media screen and (max-width: $tablet-media) {
+        padding: 0;
+      }
+    }
+
+    &__menuLink {
+      display: block;
+      color: $white;
+      font-weight: 500;
+      font-size: 18px;
+
+      @media screen and (max-width: $tablet-media) {
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.4;
+        display: inline-block;
+      }
+    }
+
+    &__hamburgerWrap {
+      display: none;
+
+      @media screen and (max-width: $tablet-media) {
+        display: flex;
+        align-items: center;
+      }
+    }
+    &__hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 25px;
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+    &__hamburgerLine {
+      height: 3px;
+      width: 100%;
+      background-color: $white;
+    }
+
+    &__overlay {
+      display: none;
+
+      &.m-active {
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+        // background: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+
+  @media screen and (max-width: $desktop-media) {
+  }
+
+  @media screen and (max-width: $tablet-media) {
+  }
+
+  @media screen and (max-width: $mobile-wide-media) {
+  }
+
+  @media screen and (max-width: $mobile-media) {
+  }
+}

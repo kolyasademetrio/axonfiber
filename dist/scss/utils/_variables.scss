@@ -1,0 +1,46 @@
+//new
+$white: #fff;
+$black: #000;
+$blue: #51ade5;
+
+$primary: #343434;
+$secondary: #828282;
+$tertiary: #fc7b1d;
+
+/* reset */
+$container-indents-x: 15px;
+$min-width: 320px;
+$max-width: 1170px; // 1140 + 15 + 15
+$base-bg: #ced0d2;
+
+$base-font-size: 18px;
+$base-line-height: 1.2;
+
+$regular: "instrument-sans-regular", sans-serif;
+$secondary-ff: "russo-one-regular", sans-serif;
+
+$base-regular-font-family: $regular; // USED
+
+$default-transition: all 0.2s linear;
+
+/* main variables */
+$link-color: $secondary;
+
+//text, titles
+$base-text-color: $secondary;
+$secondary-text-color: $white;
+
+$font-size-h1: 32px;
+$font-size-h2: 24px;
+$font-size-h3: 22px;
+$font-size-h4: 20px;
+$font-size-h5: 18px;
+$font-size-h6: 16px;
+$font-size-p: 16px;
+
+$desktop-media: 1280px;
+$tablet-media: 1024px;
+$mobile-wide-media: 767px;
+$mobile-media: 576px;
+
+$box-shadow-grid-item: 20px 20px 40px 0 rgba(0, 0, 0, 0.15);
