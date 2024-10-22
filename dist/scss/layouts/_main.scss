@@ -95,7 +95,7 @@ img {
 }
 
 .heroWrap {
-  background: #474747 url("../images/hero.jpg") center center no-repeat;
+  background: #474747 url("../images/hero-new-4.jpg") center center no-repeat;
   background-size: cover;
 
   @media screen and (max-width: $mobile-media) {
@@ -103,7 +103,7 @@ img {
   }
 
   &.m-secondary {
-    background-image: url("../images/hero-new.png");
+    background-image: url("../images/hero-new-6.jpg");
 
     // @media screen and (max-width: $mobile-media) {
     //   background-image: url("../images/hero-new-mobile.png");
@@ -111,13 +111,19 @@ img {
   }
 
   &.m-tertiary {
-    background-image: url("../images/hero-new-3.jpg");
+    background-image: url("../images/hero-new-5.jpg");
     height: 200px;
     min-height: 200px;
   }
 
   &.m-quaterniary {
     background-image: url("../images/reviews-hero.jpg");
+  }
+
+  &.m-hero {
+    height: auto;
+    min-height: auto;
+    padding-bottom: 60px;
   }
 }
 
@@ -177,6 +183,10 @@ img {
 
   &.m-quaterniary {
     padding-bottom: 60px;
+  }
+
+  &.m-hero {
+    padding-top: 50px;
   }
 
   @media screen and (max-width: $tablet-media) {
@@ -655,6 +665,175 @@ img {
   &__formWrap {
     display: flex;
     justify-content: center;
+  }
+}
+
+.info {
+  padding: 15px 0 120px;
+
+  &__inner {
+  }
+
+  &__title {
+    text-align: center;
+    color: #202020;
+    font-size: 40px;
+    line-height: 1.375;
+    font-family: $secondary-ff;
+    font-weight: 400;
+    padding: 0 0 15px;
+  }
+
+  &__content {
+  }
+
+  &__text {
+    text-align: center;
+    margin: 0;
+    padding: 0 0 20px;
+    color: #202020;
+    font-size: 24px;
+    font-family: $regular;
+    font-weight: 400;
+  }
+
+  .info__btnWrap {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 0;
+  }
+
+  .info__btn {
+  }
+}
+
+.services {
+  padding: 60px 0;
+  background: #474747 url("../images/services-bg.jpg") center center no-repeat;
+  background-size: cover;
+
+  &__inner {
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: center;
+    row-gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  &__gridItem {
+    width: 33.3333%;
+
+    @media screen and (max-width: $mobile-wide-media) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: $mobile-media) {
+      width: 100%;
+    }
+  }
+
+  &__gridItemInner {
+  }
+
+  &__gridItemIconWrap {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 20px;
+  }
+
+  &__gridItemIcon {
+    max-width: 137px;
+  }
+
+  &__gridItemTitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $white;
+    font-size: 28px;
+    font-family: $regular;
+  }
+}
+
+.contactUsSection {
+  padding: 120px 0 110px;
+  background: url("../images/map-3.png") center center no-repeat;
+  background-size: 80% auto;
+
+  @media screen and (max-width: $mobile-wide-media) {
+    padding: 80px 0;
+  }
+
+  &__inner {
+  }
+
+  &__content {
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: center;
+    gap: 116px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: $mobile-wide-media) {
+      gap: 60px;
+    }
+  }
+
+  &__griditem {
+    width: 306px;
+    max-width: 306px;
+    flex-shrink: 0;
+  }
+
+  &__griditemInner {
+    background-color: $white;
+    border-radius: calc(306px / 2);
+    padding: 60px 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-shadow: $box-shadow-grid-item;
+  }
+
+  &__griditemHeader {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 30px;
+  }
+
+  &__griditemIcon {
+    width: 80px;
+    height: 80px;
+  }
+
+  &__griditemContent {
+  }
+
+  &__griditemTitle {
+    text-align: center;
+    color: #202020;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $regular;
+  }
+
+  &__griditemFooter {
+    padding: 32px 0 0;
+  }
+
+  &__griditemFooterTel {
+    font-size: 26px;
+    font-family: $secondary-ff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    color: $tertiary;
   }
 }
 

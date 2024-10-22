@@ -20,6 +20,7 @@
     font-weight: 400;
     color: $primary;
     padding: 0 0 40px;
+    font-family: $secondary-ff;
 
     @media screen and (max-width: $mobile-wide-media) {
       font-size: 32px;
@@ -54,16 +55,62 @@
   }
 
   &__griditemInner {
-    background: url("../images/testimonial-border.png") top left no-repeat;
-    background-size: 100% calc(100% - 83px);
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // background: url("../images/testimonial-border.png") top left no-repeat;
+    // background-size: 100% calc(100% - 83px);
 
-    @media screen and (max-width: $mobile-media) {
-      background-size: 100% calc(100% - 65px);
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 76px;
+      background: url("../images/testimonial-border-top.png") top left no-repeat;
+      background-size: 100% 100%;
     }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 83px;
+      right: 0;
+      left: 0;
+      height: 70px;
+      background: url("../images/testimonial-border-bottom.png") top left
+        no-repeat;
+      background-size: 100% 100%;
+    }
+
+    // @media screen and (max-width: $mobile-media) {
+    //   background-size: 100% calc(100% - 65px);
+    // }
+  }
+
+  &__griditemInnerBg {
+    display: block;
+    position: absolute;
+    top: 76px;
+    bottom: 152px;
+    left: 0;
+    right: 0;
+    background: url("../images/testimonial-border-middle.png") top left
+      no-repeat;
+    background-size: 100% 100%;
   }
 
   &__griditemContent {
     padding: 88px 43px 45px 0;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @media screen and (max-width: $mobile-media) {
       padding-top: 75px;
@@ -73,12 +120,12 @@
 
   &__griditemTextContent {
     overflow: hidden;
-    height: 75px;
+    // height: 75px;
     margin-bottom: 30px;
 
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
+    // -webkit-box-orient: vertical;
+    // display: -webkit-box;
+    // -webkit-line-clamp: 4;
 
     @media screen and (max-width: $mobile-media) {
       margin-bottom: 18px;
