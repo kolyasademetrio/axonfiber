@@ -2126,9 +2126,18 @@ img {
   font-family: "russo-one-regular", sans-serif;
   text-align: center;
   font-weight: 400;
-  color: #343434;
-  font-size: 40px;
-  padding: 0 0 60px;
+  color: #202020;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 0 0 10px;
+}
+.resources__subtitle {
+  font-family: "instrument-sans-regular", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  color: #202020;
+  font-size: 24px;
+  padding: 0 0 65px;
 }
 .resources__grid {
   display: -webkit-box;
@@ -2404,6 +2413,66 @@ img {
   color: #fc7b1d;
 }
 
+.banner {
+  padding: 120px 0;
+  position: relative;
+  background: #474747 url("../images/banner.jpg") center center no-repeat;
+  background-size: cover;
+}
+.banner:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.6;
+}
+@media screen and (max-width: 576px) {
+  .banner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.banner .container {
+  position: relative;
+  z-index: 1;
+}
+.banner__title {
+  text-align: center;
+  font-family: "russo-one-regular", sans-serif;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  padding: 0 0 24px;
+}
+.banner__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 0 0 40px;
+}
+.banner__text {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+.banner__btnWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
