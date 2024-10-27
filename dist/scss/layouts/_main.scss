@@ -675,6 +675,18 @@ img {
   &__formWrap {
     display: flex;
     justify-content: center;
+
+    #mc_embed_signup {
+      @media screen and (max-width: $mobile-wide-media) {
+        width: 100%;
+      }
+
+      .mc-address-fields-group {
+        @media screen and (max-width: $mobile-wide-media) {
+          flex-wrap: wrap;
+        }
+      }
+    }
   }
 }
 
@@ -785,7 +797,7 @@ img {
   &__grid {
     display: flex;
     justify-content: center;
-    gap: 116px;
+    gap: 110px;
     flex-wrap: wrap;
 
     @media screen and (max-width: $mobile-wide-media) {

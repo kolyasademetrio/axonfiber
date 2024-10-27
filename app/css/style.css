@@ -2249,6 +2249,17 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  .contactSection__formWrap #mc_embed_signup {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contactSection__formWrap #mc_embed_signup .mc-address-fields-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .info {
   padding: 15px 0 120px;
@@ -2347,7 +2358,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 116px;
+  gap: 110px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
